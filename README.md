@@ -8,29 +8,29 @@ Quickly install a local version of Python within the users home directory `~/.lo
 
 Installing a latest major version:
 ```bash
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3
 ```
 
 Installing a latest minor version:
 ```bash
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3.10
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3.10
 ```
 
 Installing a specific version:
 ```bash
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3.9.16
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3.7.16
 ```
 
 ### List
 
 List all versions:
 ```bash
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") --list
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) --list
 ```
 
 List either major, minor, or patch version:
 ```bash
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3 --list
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3.1 --list
-bash <(curl -skL "https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh") 3.9.12 --list
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3 --list
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3.1 --list
+bash <(curl -skL https://raw.githubusercontent.com/xransum/pyget/main/pyget.sh) 3.9.12 --list
 ```
