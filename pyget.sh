@@ -54,11 +54,6 @@ ALL_VERSIONS="$(curl -skL "$BASE_URL" | \
     sed -n 's!.*href="\([0-9]\+\.[0-9]\+\.[0-9]\+\)/".*!\1!p' | \
     sort -V)"
 
-if [[ $# -eq 0 ]]; then
-    echo "Error: No version specified"
-    exit 1
-fi
-
 SPECIFIED_VERSIONS=()
 for version in "$@"; do
     if [[ "$version" =~ ^[0-9]+$ ]]; then
@@ -83,6 +78,11 @@ if $LIST_VERSIONS; then
         done
     fi
     exit 0
+fi
+
+if [[ $# -eq 0 ]]; then
+    echo "Error: No version specified"
+    exit 1
 fi
 
 # check if make is installed
